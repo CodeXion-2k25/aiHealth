@@ -20,6 +20,8 @@ const Header = () => {
         <div className="flex">
           <Nav />
         </div>
+
+        {/* user option for log in */}
         <Link href="/">
           <button
             className="bg-blue-400 px-3 py-2 rounded-md"

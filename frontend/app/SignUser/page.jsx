@@ -45,7 +45,10 @@ export default function AuthForm() {
             <h2 className="text-2xl font-bold text-center mb-2">
               {isSignUp ? "Sign Up" : "Sign In"}
             </h2>
+
+            {/* ----user login form---- */}
             <form className="w-[450px] h-[300px] flex flex-col items-start justify-center ">
+              {/* for sign up */}
               {isSignUp ? (
                 <>
                   <label className="flex items-center gap-3">
@@ -89,6 +92,7 @@ export default function AuthForm() {
                   />
                 </>
               ) : (
+                //for sign in 
                 <>
                   <input
                     type="email or username"
@@ -109,12 +113,14 @@ export default function AuthForm() {
                   </div>
                 </>
               )}
+                {/* button for submitting the form */}
 
               <button className="w-2/3 relative m-auto mt-1 mb-1 p-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                 {isSignUp ? "Sign Up" : "Sign In"}
               </button>
             </form>
-
+              
+              {/*---authentication direct links---*/}
             <p className="text-center mb-2">or</p>
             <div className="flex gap-10 items-center justify-center">
               {directLink.map((link, idx) => {
@@ -128,6 +134,7 @@ export default function AuthForm() {
                 );
               })}
             </div>
+
             <p className="mt-4 text-center text-sm">
               {isSignUp ? "Already have an account?" : "Don't have an account?"}
               <button
@@ -137,6 +144,7 @@ export default function AuthForm() {
                 {isSignUp ? "Sign In" : "Sign Up"}
               </button>
             </p>
+            
           </div>
         </motion.div>
       </div>
