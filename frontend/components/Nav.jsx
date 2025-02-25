@@ -37,7 +37,7 @@ const Nav = () => {
                 <Link
                     href={link.path}
                     key={idx}
-                    className={`capitalize text-black font-medium hover:text-green-400`}
+                    className={`capitalize font-popins text-black font-medium hover:text-green-400`}
                 >
                     {link.name}
                 </Link>

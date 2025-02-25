@@ -37,8 +37,8 @@ const page = () => {
                         className="w-[20vw] flex flex-col items-start gap-2 bg-white p-4 border rounded-lg shadow-md"
                       > 
                         <img src={card.image} width={300} alt="" className='rounded-md'/>
-                        <h1 className="tracking-tighter text-xl font-bold">{card.title}</h1>
-                        <p className="tracking-tighter text-gray-600">{card.desc}</p>
+                        <h1 className="tracking-tighter text-xl font-bold font-popins">{card.title}</h1>
+                        <p className="tracking-tighter text-gray-600 font-lato">{card.desc}</p>
                         <button className={`mt-2 px-4 py-2 text-white rounded ${card.btnColor}`}>{card.btn}</button>
                       </div>
                     );
