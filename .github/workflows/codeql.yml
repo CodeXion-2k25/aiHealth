@@ -35,7 +35,7 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
         queries: +security-extended,security-and-quality
-        verbosity: debug
+        verbosity: debug  # Corrected verbosity parameter
 
     - if: matrix.build-mode == 'manual'
       shell: bash
