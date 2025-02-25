@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-        - language: javascript-typescript
+        - language: "javascript, typescript"
           build-mode: none
 
     steps:
@@ -35,7 +35,7 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
         queries: +security-extended,security-and-quality
-        verbosity: debug  # Corrected verbosity parameter
+        verbosity: debug
 
     - if: matrix.build-mode == 'manual'
       shell: bash
@@ -50,4 +50,4 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
-        category: "/language:${{matrix.language}}"
+        category: "/language:${{ matrix.language }}"
