@@ -22,8 +22,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-        - language: "javascript, typescript"
-          build-mode: none
+          - language: "javascript"
+            build-mode: none
+          - language: "typescript"
+            build-mode: none
 
     steps:
     - name: Checkout repository
@@ -35,7 +37,6 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
         queries: +security-extended,security-and-quality
-        verbosity: debug
 
     - if: matrix.build-mode == 'manual'
       shell: bash
