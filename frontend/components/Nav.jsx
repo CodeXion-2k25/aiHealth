@@ -10,7 +10,7 @@ const links = [
     },
     {
         name: "Symptom Checker",
-        path: "/symptom-checker",
+        path: "/symptomChecker",
     },
     {
         name: "Nutration",
@@ -18,7 +18,7 @@ const links = [
     },
     {
         name: "Mental Health",
-        path: "/mental-health",
+        path: "/mentalHealth",
     },
     {
         name: "Dashboard",

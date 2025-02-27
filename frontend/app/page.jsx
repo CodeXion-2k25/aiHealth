@@ -1,6 +1,6 @@
 import React from 'react'
-import Cards from './Cards/page'
-import Hero from './Hero/page'
+import Cards from '/components/Cards/page'
+import Hero from '/components/Hero/page'
 const page = () => {
   return (
     <>

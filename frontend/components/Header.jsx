@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Nav from './Nav'
-import SignUser from '/app/SignUser/page'
+import SignUser from './SignUser/page'
 
 const Header = () => {
   const [showSignUser, setShowSignUser] = useState(false);

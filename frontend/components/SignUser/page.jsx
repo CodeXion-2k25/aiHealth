@@ -16,14 +16,6 @@ const directLink= [
         name: "facebook",
         img: "/assets/facebook.png"
         
-    },{
-        name: "instagram",
-        img: "/assets/instagram.png"
-        
-    },{
-        name: "X",
-        img: "/assets/X.png"
-        
     }
 ];
 
@@ -93,11 +85,13 @@ export default function AuthForm() {
                 <>
                   <label className="flex items-center gap-3">
                     <input
+                      required
                       type="text"
                       placeholder="First Name"
                       className=" p-1 mb-3 border rounded"
                     />
                     <input
+                      required
                       type="text"
                       placeholder="Last Name"
                       className=" p-1 mb-3 border rounded"
@@ -105,6 +99,7 @@ export default function AuthForm() {
                   </label>
                   <label className="flex gap-2 mb-3">
                     <input
+                      required
                       type="text"
                       placeholder="Mobile "
                       className="w-full p-1 border rounded"
@@ -116,16 +111,19 @@ export default function AuthForm() {
                     />
                   </label>
                   <input
+                    required
                     type="email"
                     placeholder="Email"
                     className="w-full p-1 mb-3 border rounded"
                   />
                   <input
+                    required
                     type="password"
                     placeholder="Password"
                     className="w-full p-1 mb-4 border rounded"
                   />
                   <input
+                    required
                     type="password"
                     placeholder="Confirm Password"
                     className="w-full p-1 mb-4 border rounded"
