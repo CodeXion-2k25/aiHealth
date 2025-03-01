@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaBrain } from "react-icons/fa";
+import { FaBrain, FaHeartbeat, FaAppleAlt } from "react-icons/fa";
 import { PiCameraFill, PiUploadSimpleLight } from "react-icons/pi";
 import { IoCloseCircle, IoShieldHalfOutline } from "react-icons/io5";
 import { RiRobot2Fill } from "react-icons/ri";
@@ -36,7 +36,7 @@ const Page = () => {
   return (
     <div className="">
       <div className="w-4/5 h-[140vh] m-auto mt-20 flex flex-col items-center gap-8 bg-white rounded-xl shadow-md mb-5 ">
-        <div className="w-[90%] h-2/5  mt-7">
+        <div className="w-[90%] h-[60%]  mt-7">
           <h1 className="font-bold font-lato mb-3 text-xl text-gray-600">
             AI Mood Detection
           </h1>
@@ -49,7 +49,7 @@ const Page = () => {
             </div>
             <div className="w-full h-full flex gap-6 justify-center px-3 mt-3">
               <div className="w-2/4 flex flex-col gap-6">
-                <div className="h-2/5 border-2 border-dashed border-purple-300 bg-white rounded-lg flex flex-col items-center justify-center gap-2 relative">
+                <div className=" py-6 border-2 border-dashed border-purple-300 bg-white rounded-lg flex flex-col items-center justify-center gap-2 relative">
                   {/* Hide UI when image is selected */}
                   {!imagePreview ? (
                     <>
@@ -121,7 +121,7 @@ const Page = () => {
                   )}
                 </div>
 
-                <div className="h-2/5 border-2 bg-white rounded-lg shadow-sm">
+                <div className="h-[30%] border-2 bg-white rounded-lg shadow-sm">
                   <p className="text-md font-lato font-semibold text-purple-500 pl-4 pt-3">
                     Current Emotional State
                   </p>
@@ -191,6 +191,37 @@ const Page = () => {
                 Your symptoms
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-4/5 h-[37vh] m-auto mt-8 py-6 px-9 gap-8 bg-white rounded-xl shadow-md mb-5 ">
+        <h1 className="font-bold font-lato mb-3 text-xl text-gray-600 px-5">
+          Health Resources
+        </h1>
+        <div className="w-full flex items-center justify-center gap-5 px-5">
+          <div className="w-1/3 border-2 bg-purple-100 border-purple-300 p-4 rounded-lg flex flex-col gap-3 items-start">
+              <div className="flex items-center gap-1 text-base font-semibold text-purple-600">
+                <FaBrain/>
+                <p>Mental Wellness</p>
+              </div>
+              <p className="text-sm font-light text-purple-500">Access resources fpr stress management, anxiety relife, and emotional support.</p>
+              <button className="p-2 border-2 rounded-md font-semibold text-slate-100 bg-purple-500 border-purple-300 hover:bg-purple-700 transition">Explore Resourses</button>
+          </div>
+          <div className="w-1/3 border-2  bg-blue-100 border-blue-300 p-4 rounded-lg flex flex-col gap-3 items-start">
+              <div className="flex items-center gap-1 text-base font-semibold text-blue-600">
+                <FaHeartbeat/>
+                <p>Preventive Care</p>
+              </div>
+              <p className="text-sm font-light text-blue-700">Learn about screenings, vaccinations, and preventive measures</p>
+              <button className="p-2 border-2 rounded-md font-semibold text-slate-100 bg-blue-600 border-blue-400 hover:bg-blue-700 transition">View Guidelines</button>
+          </div>
+          <div className="w-1/3 border-2  bg-green-100 border-green-300 p-4 rounded-lg flex flex-col gap-3 items-start">
+              <div className="flex items-center gap-1 text-base font-semibold text-green-800">
+                <FaAppleAlt/>
+                <p>Nutration Guide</p>
+              </div>
+              <p className="text-sm font-light text-green-700">Get personalized nutration advice and healthy meal planning tips.</p>
+              <button className="p-2 border-2 rounded-md font-semibold text-slate-100 bg-green-700 border-green-500 hover:bg-green-800 transition">Get Advice</button>
           </div>
         </div>
       </div>
