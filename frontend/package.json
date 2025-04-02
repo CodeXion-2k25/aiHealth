@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
-    "framer-motion": "^12.4.7",
+    "framer-motion": "^12.6.2",
     "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
